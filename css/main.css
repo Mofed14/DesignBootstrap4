@@ -1,0 +1,810 @@
+/**
+theme name  : EliteCore
+theme coder : mofed
+first color : #08526d
+second color : #ec1c23
+
+/**
+
+
+/** start upper bar **/
+.upper-bar{
+    background-color: #08526d;
+    color: #fff;
+}
+
+span.get-quote{
+    display: inline-block;
+    border: 1px solid #ec1c23;
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+
+.upper-bar .info{
+
+    margin: 10px 0;
+}
+
+
+@media (max-width:576px){
+
+    .upper-bar .get-quote{
+        border: none;
+        margin-left: 3px;
+    }
+}
+
+
+@media (max-width:576px){
+
+    .upper-bar .info:first-child{
+        margin-bottom: 0;
+    }
+}
+
+/** end upper bar **/
+
+
+/* start navbar */
+
+.navbar-light .navbar-nav .nav-link{
+    color: #08526d !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link{
+color: #ec1c23 !important;
+
+}
+
+.navbar-brand span.elite{
+    font-weight: bold;
+    color: #08526d;
+    font-size: 40px;
+}
+
+.navbar-brand span.core{
+    color: #ec1c23;
+    font-size: 40px;
+}
+
+/* end navbar */
+
+
+/* start slider */
+ 
+.slider{
+    background-color: #ddd;
+}
+
+.slider .carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+@media(max-width:768px){
+    .slider .carousel-inner{
+        justify-content: center;
+
+    }
+}
+
+.slider .carousel-item{
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        
+    
+}
+
+.slider .carousel-one{
+    background-image: url('../image/2.jpg');
+}
+
+.slider .carousel-two{
+    background-image: url('../image/3.jpg');
+}
+
+.slider .carousel-three{
+    background-image: url('../image/2.jpg');
+}
+
+
+
+.slider h1{
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+    font-size: 69px;
+    max-width: 800px;
+    left: 56px;
+}
+
+
+@media(max-width:768px){
+    .slider .carousel-inner .h1{
+        max-width: 100%;
+        left: auto;
+        text-align: center;
+        font-size: 10px;
+
+    }
+}
+
+
+
+
+
+.slider h1 span {
+    background-color: #ec1c23; 
+}
+
+.slider .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 37, 41, .6);
+    z-index: 2;
+}
+
+.slider .carousel-indicators li{
+    height: 8px;
+    cursor: pointer;
+}
+
+/* end slider */
+
+/* start feature */
+
+.feature {
+    margin-top: 80px !important;
+}
+
+.feature i{
+
+    background-color: #ec1c23;
+    padding: 11px;
+    color: #fff;
+}
+.feature h3{
+    color: #08526d;
+    font-size: 22px;
+}
+
+
+.feature p{
+    color: #b9b7b7;
+    margin-bottom:90px; 
+    /* البراجراف هو اخر عنصر فانا هعمل مارجن بوتوم بدل ماحط العناصر فبوكس واعمل للبوكس مارجن */
+}
+
+
+/* end feature */
+
+
+
+/* start overview */
+
+.overview{
+    padding: 100px;
+    background-color: #f0f5f7;
+}
+
+
+.overview h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+@media(max-width:768px){
+    .overview h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+
+.overview p{
+    color: #a09d9d;
+    line-height: 2;
+    width: 80%;
+    margin: 0 auto 8px; 
+    /* عشان يبقي في النص auto*/
+}
+
+
+@media(max-width:768px){
+    .overview p{
+        width: 100%;
+    }
+    
+
+}
+
+.overview h4{
+    color: #6a6a6a;
+    font-weight: normal;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+
+.overview button{
+    background-color: #ec1c23;
+    border-color: #ec1c23;
+    color: #fff;
+    padding: 5px 21px;
+    letter-spacing: 3px;
+
+
+}
+
+/* end overview */
+
+/* srart featured-work */
+
+.featured-work{
+
+    margin-top: 80px;
+}
+
+.featured-work h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.featured-work p{
+    color: #a09d9d;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto 40px; 
+    /* عشان يبقي في النص auto*/
+}
+.featured-work ul {
+    margin-bottom: 50px;
+}
+
+
+.featured-work ul li{
+    border: 1px solid #08526d;
+    color: #08526d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 7px 20px;
+    margin-right: 8px;
+    margin-top: 8px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    /* عشان الكيلك يبقي انعم */
+}
+
+.featured-work ul .active,
+.featured-work ul li:hover
+{
+    background: #ec1c23;
+    border: 1px solid #ec1c23 !important;
+    color: #fff !important;
+    
+}
+
+
+.featured-work ul li:hover
+{
+    
+cursor: pointer;
+}
+
+
+
+
+.featured-work  .shuffle-image{
+
+    margin-top: 50px;
+}
+
+.featured-work .shuffle-imgs .row {
+    margin: 0;
+
+/*  عشان يلغي الاسكرول العرضي */
+}
+
+.featured-work .shuffle-imgs .row .col-md{
+
+    padding: 0;
+/*  عشان يلغي الاسكرول العرضي */
+
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+
+}
+
+
+.featured-work .row img{
+
+    width: 100%;
+    /* عشان الصور تملي مساحة الدف اللي هي فيه */
+}
+/* end featured-work */
+
+
+
+/* start latest posts */
+
+.latest-posts{
+
+    margin-top: 80px;
+}
+
+.latest-posts h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.latest-posts .latestP{
+    color: #a09d9d;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto 40px; 
+    /* عشان يبقي في النص auto*/
+}
+
+
+.latest-posts .card h5{
+    color: #08526d;
+}
+
+
+.latest-posts .card p{
+    color: #a09d9d;
+}
+
+
+.latest-posts .container .row .col-md .card a{
+    color: #ec1c23;
+    font-weight: bold;
+}
+/* end latest posts */
+
+/* start test */
+.testimonails {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url('../image/2.jpg');
+    position: relative;
+    margin-top: 80px;
+
+
+
+}
+
+.testimonails .container{
+    position: relative;
+    z-index: 5;
+}
+
+
+.testimonails .carousel-caption{
+
+    top:50%;
+    margin-top: -158px;
+}
+
+
+.testimonails .carousel-caption img{
+    margin-bottom: 8px;
+}
+
+
+.testimonails .carousel-caption h5{
+
+    margin-bottom: 5px;
+    font-size: 18px;
+
+}
+
+
+.testimonails .carousel-caption span{
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.testimonails .overlaay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 37, 41, .6);
+    z-index: 2;
+}
+
+.testimonails .carousel-indicators li {
+    height: 8px;
+    cursor: pointer;
+}
+
+/* end test */
+
+/* start pricing table */
+
+.pricing-table{
+
+    background-color: #f7f7f7;
+    margin-top: 80px;
+}
+
+.pricing-table .container h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.pricing-table .pricingP{
+    color: #a09d9d;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto 40px; 
+    /* عشان يبقي في النص auto*/
+}
+
+
+.pricing-table .mid{
+    position: relative;
+    top: -20px;
+}
+
+/* في الشاشه الارج اعمل كده */
+@media(max-width:992px){ 
+    .pricing-table .card{
+        margin-top: 19px;
+    }
+}
+
+/* في الشاشه المديم اعمل كده */
+
+@media(max-width:768px){
+    .pricing-table .mid{
+        top: 0;
+    }
+}
+
+
+.pricing-table .card-body{
+    padding: 0 !important;
+}
+
+
+.pricing-table .card h5{
+    color: #08526d;
+    font-size: 25px;
+    margin-top: 35px;
+
+}
+
+.pricing-table .container .row .card h1 {
+    background-color: #eee;
+    padding: 4px 35px;
+    margin-top: 25px;
+    color: #085771;
+    font-family: initial;
+    font-weight: bold;
+ 
+}
+
+
+.pricing-table .mid h1{
+    background-color: #ec1c23 !important;
+    color: #fff !important;
+}
+
+
+.pricing-table h1 small{
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.pricing-table li.list-group-item{
+    border: none;
+}
+
+.pricing-table .container .row .col-md .card .card-body a{
+    border: 1px solid #ec1c23;
+    background-color: #ec1c23;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 26px;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.pricing-table .container .row .mid a{
+    background-color:  #08526d !important;
+    border: 1px solid #08526d !important;
+
+}
+
+/* end pricing table */
+
+
+/* start choose us */
+
+
+.choose-us {
+
+    margin-top: 80px;
+}
+
+.choose-us .why{
+    background-color: #08526d;
+    color: #fff;
+    
+}
+
+
+.choose-us .col-md-6{
+    padding: 0;
+
+    /*نفسها عشان مايبقاش فيه فراغ بين الصوره والنص col-md-6  شلت البادنج بتاع  */
+}
+
+.choose-us .container-fluid .row .col-md-6 img{
+    max-width: 100%;
+    /* جرب شيلها وانت هتفهم */
+    /*col-6 عشان تاخد ميه في الميه من نصف الشاشه فقط  */
+}
+
+
+.choose-us .container-fluid .row .why h2{
+    margin-top: 100px;
+}
+
+.choose-us .container-fluid .row .why p ,
+.choose-us .container-fluid .row .why h2,
+.choose-us .container-fluid .row .why a {
+    margin-left: 30px;
+}
+
+.choose-us .container-fluid .row .why a{
+   
+    border: 1px solid #ec1c23;
+    background-color: #ec1c23;
+    color: #fff;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+@media(max-width:992px){
+
+    .choose-us .container-fluid .row .why a{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+}
+/* end choose us */
+
+
+
+/* start statistics */
+
+.statistics{
+    padding: 100px 0;
+}
+
+
+.statistics .container .row .col-md-6 .fa{
+    color: #08526d;
+}
+
+
+.statistics .container .row .col-md-6 .number{
+    color: #08526d;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+}
+
+
+.statistics .container .row .col-md-6 p{
+    color: #ec1c23;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+/* end statistics */
+
+
+
+/*start contact  */
+
+
+.contact{
+    padding: 50px 0;
+    background-color: #ec1c23;
+    color: #eee;
+    font-size: 20px;
+    height: 204px;
+}
+
+.contact .container{
+    top: 50%;
+    margin-top: 46px;
+}
+
+.contact a {
+    border: 1px solid #eee;
+    padding: 3px 15px;
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+}
+/*start contact  */
+
+
+
+/* start footer */
+
+.footer{
+    padding: 100px 0;
+}
+
+.footer .site-info span.elite{
+    font-weight: bold;
+    color: #08526d;
+    font-size: 40px;
+}
+
+.footer .site-info span.core{
+    color: #ec1c23;
+    font-size: 40px;
+}
+
+.footer .site-info p{
+    margin-top: 20px;
+    color: #8c8a8a;
+    line-height: 1.8;
+}
+
+.footer .site-info a{
+    color: #08526d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*اعمل كذا a  قبل ال */
+.footer .site-info a::before{ 
+    font-family: "Font Awesome 5 Free";
+     content: "\f138";
+     display: inline-block;
+    margin-right: 3px;
+}
+
+
+
+.footer .helpful-links{
+    color: #08526d;
+    font-weight: bold;
+}
+
+
+.footer .helpful-links .row{
+    margin-top: 38px;
+}
+
+.footer .helpful-links li{
+
+    line-height: 3;
+    font-size: 15px;
+}
+
+.footer .helpful-links li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    display: inline-block;
+    margin-right: 3px;
+
+}
+
+
+@media(max-width:992px){
+    .footer .helpful-links h3,
+    .footer .contactUS h3{
+
+        margin-top: 28px;
+        margin-bottom: -23px;
+    }
+    .footer .contactUS li{
+        margin-bottom: -20px;
+    }
+
+}
+
+.footer .contactUS{
+
+    color: #08526d;
+    font-weight: bold;
+}
+
+
+.footer .contactUS .co{
+    margin-top: 31px;
+    color: #aba9a9;
+    font-size: 13px;
+}
+
+.footer .contactUS li{
+line-height: 4;
+
+}
+
+
+.footer .contactUS a{
+    color: #08526d;
+    
+    }
+
+/* end footer */
+
+
+
+/* start copyright */
+
+.copyright {
+    border-top: 1px solid #bfb8b8;
+    padding-top: 10px;
+}
+
+.copyright ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+
+.copyright ul li a{
+    color: #777;
+}
+
+
+/* end copyright */
